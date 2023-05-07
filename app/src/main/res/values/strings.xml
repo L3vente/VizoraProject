@@ -4,7 +4,7 @@
     <string name="Email">E-mail</string>
     <string name="psw">Jelszó</string>
     <string name="login">Bejelenkezés</string>
-    <string name="noaccount">Nincs még fiókod? <u>Kattints ide</u>, vagy jelentkezz be vendégként!</string>
+    <string name="noaccount">Nincs még fiókod? <u>Regisztrálj</u>, vagy jelentkezz be Google-el, vagy vendégként!</string>
     <string name="AccountReg">Fiók regisztráció</string>
     <string name="pswagain">Jelszó újra</string>
     <string name="firstname">Keresztnév</string>
