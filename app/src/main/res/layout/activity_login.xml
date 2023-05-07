@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollViewLogin"
+    tools:context=".LoginActivity"
+    android:transitionName="asd"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/splash_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginbg"
+            />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/splash_imageview"
+            android:layout_marginTop="81dp"
+            android:layout_marginBottom="125dp"
+            android:background="#A1F3ECEC"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/LoginText"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splash_imageview"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/Email"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/emailTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/pswTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailET"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/psw"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:layout_height="60dp"
+            android:id="@+id/pswET"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/pswTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPassword"
+            android:paddingVertical="20dp"
+            />
+
+        <Button
+            android:id="@+id/loginBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pswET"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/noaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBTN"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/noaccount"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noaccount"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/google_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:background="#57FDFAFA"
+                android:drawableStart="@drawable/btn_google_light_normal_tvdpi"
+                android:text="Belejentkezés google-el"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/guest_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="5dp"
+                android:text="Bejelentkezés vendégként"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>

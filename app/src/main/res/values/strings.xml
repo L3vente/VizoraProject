@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Vízóra Lejelentés</string>
+    <string name="LoginText">Online vízóra lejelentés!</string>
+    <string name="Email">E-mail</string>
+    <string name="psw">Jelszó</string>
+    <string name="login">Bejelenkezés</string>
+    <string name="noaccount">Nincs még fiókod? <u>Kattints ide</u>, vagy jelentkezz be vendégként!</string>
+    <string name="AccountReg">Fiók regisztráció</string>
+    <string name="pswagain">Jelszó újra</string>
+    <string name="firstname">Keresztnév</string>
+    <string name="lastname">Vezetéknév</string>
+    <string name="cancel">Mégse</string>
+    <string name="Singnup">Regisztráció</string>
+    <string name="position">Aktuális mérőállás m<sup>3</sup></string>
+</resources>

@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:transitionName="asd"
+    android:id="@+id/viewLoading">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/AccountReg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28sp" android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/lastnameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/lastname"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/lastnameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/lastnameTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPersonName"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:id="@+id/firstnameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastnameET"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/firstname"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/firstnameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/firstnameTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPersonName"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/Email"
+            android:layout_below="@id/firstnameET"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@id/emailTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:id="@+id/pswTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailET"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/psw"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/pswET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/pswTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPassword"
+            android:paddingVertical="20dp" />
+        <TextView
+            android:id="@+id/pswaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pswET"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/pswagain"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/pswaET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/pswaTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPassword"
+            android:paddingVertical="20dp" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pswaET"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/regBTN"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="5dp"
+                android:text="@string/Singnup"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cancelBTN"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="5dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>

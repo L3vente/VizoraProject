@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+<!--            android:adjustViewBounds="true"-->
+
+
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Cím"
+                android:textColor="#03A9F4"
+                android:layout_below="@id/itemImage"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Cím"
+                android:layout_below="@id/addressText"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/factoryNumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Gyári szám"
+                android:textColor="#03A9F4"
+                android:layout_below="@id/address"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/factoryNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Gyári szám"
+                android:textColor="@color/black"
+                android:layout_below="@id/factoryNumText"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:text="Dátum"
+                android:textColor="#03A9F4"
+                android:layout_below="@id/factoryNum"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:text="Dátum"
+                android:textColor="@color/black"
+                android:layout_below="@id/dateText"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+            <TextView
+                android:id="@+id/positionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:text="Mérőállás"
+                android:textColor="#03A9F4"
+                android:layout_below="@id/date"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:text="Mérőállás"
+                android:textColor="@color/black"
+                android:layout_below="@id/positionText"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/position"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/white"
+                android:text="Módosítás" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg"
+                android:text="Törlés" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

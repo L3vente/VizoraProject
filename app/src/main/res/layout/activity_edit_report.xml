@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewLoading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="asd"
+    tools:context=".AddReportActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Vízóra Jelentés módosítása"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Készülék helye(címe)"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/addressET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/addressTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:maxLines="3" />
+
+        <TextView
+            android:id="@+id/factoryNumTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressET"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Gyári száma"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/factoryNumET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/factoryNumTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="number"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/factoryNumET"
+            android:layout_marginHorizontal="30dp"
+            android:text="Rögzítés dátuma"
+            android:textColor="#03A9F4" />
+
+        <LinearLayout
+            android:id="@+id/selectDateLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dateET"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:editable="false"
+                android:padding="10dp"
+                android:textColor="#03A9F4"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/dateSelect"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Válassz dátumot"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/positionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectDateLinear"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/position"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/positionET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/positionTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="number"
+            android:paddingVertical="20dp" />
+
+        <Button
+            android:id="@+id/uploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/positionET"
+            android:layout_marginHorizontal="30dp"
+            android:text="Kép feltöltése" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submitBTN"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="5dp"
+                android:text="Módosítás"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cancelBTN"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="5dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>

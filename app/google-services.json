@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "288107534116",
+    "project_id": "vizoraproject",
+    "storage_bucket": "vizoraproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288107534116:android:a6d474f1d2e5e557f245b1",
+        "android_client_info": {
+          "package_name": "com.example.vizoraproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288107534116-akeh8rtudu8fot2nk44b7i3p6ahaaipl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vizoraproject",
+            "certificate_hash": "afe761487336d9b5e822f41e0791974986e45e95"
+          }
+        },
+        {
+          "client_id": "288107534116-57m0atkesnec8ku3q0qsp7fajf9s6tig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoQkChCCFdKIMpgdONnVTxMkNnZTFvmLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288107534116-57m0atkesnec8ku3q0qsp7fajf9s6tig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_bar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        >
+    </item>
+    <item
+        android:id="@+id/view_selector"
+        app:showAsAction="always"
+        android:title="views"
+        android:icon="@drawable/ic_view_grid"
+        >
+    </item>
+    <item
+        android:id="@+id/add_reportBTN"
+        app:showAsAction="always"
+        android:title="Jelentés hozzáadása"
+        android:icon="@drawable/ic_add_report_icon"
+        >
+    </item>
+    <item
+        android:id="@+id/log_out_button"
+        app:showAsAction="always"
+        android:title="Kijelentkezés"
+        android:icon="@drawable/ic_sign_out"
+        >
+    </item>
+
+</menu>

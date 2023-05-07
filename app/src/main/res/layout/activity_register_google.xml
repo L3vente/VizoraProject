@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="asd"
+    tools:context=".RegisterActivity"
+    android:id="@+id/viewLoading">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/AccountReg"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/lastnameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/lastname"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/lastnameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/lastnameTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPersonName"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:id="@+id/firstnameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastnameET"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/firstname"
+            android:textColor="#03A9F4" />
+
+        <EditText
+            android:id="@+id/firstnameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputDP"
+            android:layout_below="@+id/firstnameTV"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPersonName"
+            android:paddingVertical="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstnameET"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/regBTN"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="5dp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>
