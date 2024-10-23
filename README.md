@@ -17,3 +17,4 @@ Ezt a projektet 2023-ban készítettem, a feladat egy mobilos Android alkalmazá
 - **Android permission**: Legalább egy olyan androidos erőforrás használata, amihez szükséges android permission.
 - **Notification kezelés**: Legalább egy notification, alarm manager vagy job scheduler használata.
 - **CRUD műveletek**: Minden CRUD művelet megvalósult, és a műveletek service-(ek)be vannak kiszervezve (AsyncTasks).
+![VízóraProject screenshot](./images/vizora_screenshot.jpg)
