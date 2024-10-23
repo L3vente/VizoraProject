@@ -1,4 +1,4 @@
-# VizoraProject
+# VízóraProject
 
 Ezt a projektet 2023-ban készítettem, a feladat egy mobilos Android alkalmazás készítése volt Java-ban, a mobilalkalmazás-fejlesztés gyakorlat kurzusra. A téma egy online vízóra lejelentésre szolgáló applikáció készítése volt.
 
